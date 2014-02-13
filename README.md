@@ -1,7 +1,7 @@
 R_Functional_Programming
 =================
 
-R_Functional_Programming is project for demonstrating different posibilities and examples of functional programming in Haskell language.
+R_Functional_Programming is project for demonstrating different posibilities and examples of functional programming in Haskell.
 
 Contents:
 
