@@ -3,6 +3,8 @@ R_Functional_Programming
 
 R_Functional_Programming is project for demonstrating different posibilities and examples of functional programming in Haskell language.
 
+There is more to come, please be patient...
+
 Functional Programming
 -------------
 In computer science, functional programming is a programming paradigm, a style of building the structure and elements of computer programs, that treats computation as the evaluation of mathematical functions and avoids state and mutable data. Functional programming emphasizes functions that produce results that depend only on their inputs and not on the program state—i.e. pure mathematical functions. It is a declarative programming paradigm, which means programming is done with expressions. In functional code, the output value of a function depends only on the arguments that are input to the function, so calling a function f twice with the same value for an argument x will produce the same result f(x) both times. Eliminating side effects, i.e. changes in state that do not depend on the function inputs, can make it much easier to understand and predict the behavior of a program, which is one of the key motivations for the development of functional programming.
@@ -11,7 +13,7 @@ In contrast, imperative programming changes state with commands in the source la
 Functional programming languages, especially purely functional ones such as Hope and Rex, have largely been emphasized in academia rather than in commercial software development. However, prominent functional programming languages such as Common Lisp, Scheme, Clojure, Racket, Erlang, OCaml, Haskell, Scala and F# have been used in industrial and commercial applications by a wide variety of organizations. Functional programming is also supported in some domain-specific programming languages like R (statistics), Mathematica (symbolic and numeric math), J, K and Q from Kx Systems (financial analysis), XQuery/XSLT (XML), and Opal. Widespread domain-specific declarative languages like SQL and Lex/Yacc use some elements of functional programming, especially in eschewing mutable values.
 Programming in a functional style can also be accomplished in languages that aren't specifically designed for functional programming. For example, the imperative Perl programming language has been the subject of a book describing how to apply functional programming concepts. C# 3.0 and Java 8 added constructs to facilitate the functional style.
 
-Functional Programming
+Haskell
 -------------
 Haskell /ˈhæskəl/ is a standardized, general-purpose purely functional programming language, with non-strict semantics and strong static typing. It is named after logician Haskell Curry. In Haskell, "a function is a first-class citizen" of the programming language. As a functional programming language, the primary control construct is the function.
 Haskell features lazy evaluation, pattern matching, list comprehension, type classes, and type polymorphism. It is a purely functional language, which means that in general, functions in Haskell do not have side effects. There is a distinct construct for representing side effects, orthogonal to the type of functions. A pure function may return a side effect which is subsequently executed, modeling the impure functions of other languages.
