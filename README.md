@@ -63,7 +63,6 @@ RocKK$ ./1.HelloWorld
 Compiling all files on Mac OS X
 
 ```BASH
-RocKK$ for file in $*; do  [ -f "$file" ] && cat "$file"; done
 RocKK$ for file in *.hs; do
 > ghc -L/usr/lib --make $file
 > done
