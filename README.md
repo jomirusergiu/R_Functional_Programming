@@ -30,6 +30,11 @@ Contents:
 23. TimeCPU
 24. ExternalCommand		
 25. DataUnique	
+26. Sections.hs
+27. AutomaticTesting.hs
+28. 28.Types.hs
+29. DataTree.hs
+30. Integral.hs
 
 There is more to come, please be patient...
 
