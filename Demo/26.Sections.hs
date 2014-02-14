@@ -1,5 +1,5 @@
 --
---  2.SystemInfo.hs
+--  26.Sections.hs
 --  R_Functional_Programming
 --
 --  Created by RocKK on 2/13/14.
@@ -16,12 +16,8 @@
 --  from this software without specific prior written permission.
 --  THIS SOFTWARE IS PROVIDED ''AS IS'' AND WITHOUT ANY EXPRESS OR
 --  IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
---  WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. 
-
-import System.Info
+--  WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
 
 main = do
-    print os
-    print arch
-    print compilerName
-    print compilerVersion
+    print $ (1 /) 2
+    print $ (/ 1) 2

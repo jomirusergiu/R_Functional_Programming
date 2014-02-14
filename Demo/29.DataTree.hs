@@ -1,5 +1,5 @@
 --
---  2.SystemInfo.hs
+--  29.DataTree.hs
 --  R_Functional_Programming
 --
 --  Created by RocKK on 2/13/14.
@@ -16,12 +16,16 @@
 --  from this software without specific prior written permission.
 --  THIS SOFTWARE IS PROVIDED ''AS IS'' AND WITHOUT ANY EXPRESS OR
 --  IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
---  WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. 
+--  WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
 
-import System.Info
+import Data.Tree
+
+tree = Node "A" [Node "B" [], Node "C" [Node "D" [], Node "E" []]]
 
 main = do
-    print os
-    print arch
-    print compilerName
-    print compilerVersion
+    print tree
+    putStrLn $ drawTree tree
+    putStrLn $ drawForest $ subForest tree
+
+    print $ flatten tree
+    print $ levels tree

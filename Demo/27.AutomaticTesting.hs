@@ -1,5 +1,5 @@
 --
---  2.SystemInfo.hs
+--  27.AutomaticTesting.hs
 --  R_Functional_Programming
 --
 --  Created by RocKK on 2/13/14.
@@ -16,12 +16,16 @@
 --  from this software without specific prior written permission.
 --  THIS SOFTWARE IS PROVIDED ''AS IS'' AND WITHOUT ANY EXPRESS OR
 --  IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
---  WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. 
+--  WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
 
-import System.Info
+import Test.QuickCheck
+
+check x = x == (reverse . reverse) x
 
 main = do
-    print os
-    print arch
-    print compilerName
-    print compilerVersion
+    print stdArgs
+    sample (vector 3 :: Gen [Int])
+    sample (orderedList :: Gen [Int])
+
+    quickCheck (check :: [Int] -> Bool)
+    verboseCheck (check :: [Int] -> Bool)
